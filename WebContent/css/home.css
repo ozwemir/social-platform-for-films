@@ -1,0 +1,55 @@
+html, body {
+	margin: 2% 12% 2% 12%;
+	height: 100%;
+}
+
+.header {
+	margin: 0px 0px 5px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+#content {
+	display: none;
+	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+input {
+	font-size: 22px;
+	padding: 10px 20px 10px 20px;
+	background-color: white;
+	transition-duration: 0.4s;
+	background-color: white;
+	border: thin solid #2196F3;
+}
+
+input[type=submit]:hover {
+	background-color: #2196F3;
+	color: white;
+}
+
+#btn1, .btn1{
+	font-size: 22px;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	background-color: white;
+	transition-duration: 0.4s;
+	background-color: white;
+	border: 1px solid #2196F3;
+}
+
+#btn1:hover {
+	background-color: #2196F3;
+	color: white;
+}
+
+#stream {
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	margin: 15px;
+}
+
+.stream-header {
+	font-size: 1.8em;
+}
