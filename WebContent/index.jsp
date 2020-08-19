@@ -29,11 +29,9 @@
 						<input type="password" name="password">
 					</div>
 					<div>
-					<c:if test="${not empty message}">
-						<label id="warning-label"> 
-							Invalid user or password
-						</label>
-					</c:if>
+						<c:if test="${not empty message}">
+							<label id="warning-label"> Invalid user or password </label>
+						</c:if>
 					</div>
 				</div>
 				<div>

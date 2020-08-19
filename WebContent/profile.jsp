@@ -33,19 +33,5 @@
 			</c:if>
 		</c:forEach>
 	</div>
-
-
-
-	<!--  
-	<div id="stream-content">
-		<c:forEach var="content" items="${CONTENT.values()}">
-			<div id="stream">
-				<div>${content.userName}</div>
-				<div class="stream-header">${content.header}</div>
-				<div>${content.review }</div>
-			</div>
-		</c:forEach>
-	</div>
-	-->
 </body>
 </html>

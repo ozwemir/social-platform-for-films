@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header">Sign in</div>
 		<div id="container">
+			<div>Sign in</div>
 			<form action="MainController" method="POST">
 				<input type="hidden" name="command" value="ADD-USER">
 				<div>

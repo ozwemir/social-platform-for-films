@@ -20,14 +20,6 @@
 </head>
 <body>
 	<%
-		// this code is generated for back arrow relogin issue
-	/*
-	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-	response.setHeader("Pragma", "no-cache");
-	response.setHeader("Expires", "0");
-	*/
-
-	//if home.jsp url is typed and the session is null then redirect to index.jsp
 	if (session.getAttribute("THEUSER") == null) {
 		response.sendRedirect("index.jsp");
 	}
@@ -36,13 +28,6 @@
 		<nav>
 			<div class="header">
 				<div class="btn1">
-					<!--  
-					<form action="MainController" method="POST">
-						<input type="hidden" name="command" value="USER-PAGE"> <input
-							type="hidden" name="userId" value="${THEUSER.id}"> <input
-							type="submit" value="${THEUSER.userName}">
-					</form>
--->
 					<c:url var="tempLink" value="profile.jsp">
 						<c:param name="userId" value="${THEUSER.id}"></c:param>
 					</c:url>
@@ -92,6 +77,7 @@
 							<div>${content.userName}</div>
 							<div class="stream-header">${content.header}</div>
 							<div>${content.review }</div>
+							<div id ="comment-section">comment*like*hate</div>
 						</div>
 					</c:forEach>
 				</div>
@@ -99,6 +85,5 @@
 		</div>
 	</main>
 	<footer> </footer>
-
 </body>
 </html>

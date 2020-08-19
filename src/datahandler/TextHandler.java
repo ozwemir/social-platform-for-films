@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 
 public class TextHandler {
-	private final String CONSTANT_PATH = "C:\\Users\\ozwemir\\eclipse-workspace\\SocialPlatform\\resource\\";
+	private final String CONSTANT_PATH = "C:\\Users\\ozwemir\\eclipse-workspace\\social-platform-for-films\\resource\\";
 
 	public boolean createTxtFile(String path, String comment) {// if only text has written then do the database work
 
@@ -35,7 +35,7 @@ public class TextHandler {
 	}
 
 	public String getTxtFile(String path) {
-
+		
 		String theText = null;
 		try (BufferedReader reader = new BufferedReader(new FileReader(CONSTANT_PATH + path))) {
 			while ((theText = reader.readLine()) != null) {
