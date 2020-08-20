@@ -109,14 +109,12 @@ public class MainController extends HttpServlet {
 			/* save the review title to database by user id */
 			try {
 				boolean isAdded = databaseHandler.addReview(blog, userId);
-				System.out.println("is added " + isAdded);
-
 				if (isAdded) {
 					request.setAttribute("result", "added");
 				} else {
 					/* if something went wrong with database. Delete created text file */
 					textHandler.deleteCreatedTextFile(path);
-					request.setAttribute("result", "not added");
+					request.setAttribute("result", "notAdded");
 				}
 				response.sendRedirect("ControllerPRG");
 

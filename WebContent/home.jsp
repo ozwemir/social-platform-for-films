@@ -23,6 +23,7 @@
 	if (session.getAttribute("THEUSER") == null) {
 		response.sendRedirect("index.jsp");
 	}
+		
 	%>
 	<header>
 		<nav>
@@ -77,13 +78,17 @@
 							<div>${content.userName}</div>
 							<div class="stream-header">${content.header}</div>
 							<div>${content.review }</div>
-							<div id ="comment-section">comment*like*hate</div>
+							<div id="comment-section">comment*like*hate</div>
 						</div>
 					</c:forEach>
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer> </footer>
+	<footer>
+		<div>
+			<div id="footer"><jsp:include page="footer.jsp"></jsp:include></div>
+		</div>
+	</footer>
 </body>
 </html>
