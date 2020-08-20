@@ -21,10 +21,8 @@
 		response.sendRedirect("index.jsp");
 	}
 	%>
-
-	
 	<div id="stream-content">
-		<div><h1>My posts</h1></div>
+		<div class="stream-header start">My posts</div>
 		<c:forEach var="content" items="${CONTENT.values()}">
 			<c:if test="${THEUSER.id==content.userId}">
 				<div id="stream">
@@ -34,10 +32,9 @@
 			</c:if>
 		</c:forEach>
 	</div>
-
 	<footer>
 		<div>
-			<div id="footer"><jsp:include page="footer.jsp"></jsp:include></div>
+			<div id ="footer"><jsp:include page="footer.jsp"></jsp:include></div>
 		</div>
 	</footer>
 
