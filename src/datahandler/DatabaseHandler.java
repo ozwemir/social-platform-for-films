@@ -85,10 +85,11 @@ public class DatabaseHandler {
 			statement.setString(2, blog.getBlogPath());
 			statement.setString(3, userId);
 
-			if (statement.execute()) {
-				flag = true;
-			}
+			statement.execute();
+			flag = true;
 
+			
+			
 		} catch (Exception e) {
 			System.out.println("catch blok"); // app did not break yay
 		} finally {

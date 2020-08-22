@@ -109,6 +109,7 @@ public class MainController extends HttpServlet {
 			/* save the review title to database by user id */
 			try {
 				boolean isAdded = databaseHandler.addReview(blog, userId);
+				System.out.println("is added " + isAdded);
 				if (isAdded) {
 					request.setAttribute("result", "added");
 				} else {

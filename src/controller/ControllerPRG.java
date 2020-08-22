@@ -16,12 +16,13 @@ public class ControllerPRG extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String addingReviewToDatabase = request.getParameter("result");
-		if(addingReviewToDatabase.equals("added")) {
-			System.out.println("controllerPRG" + addingReviewToDatabase);
-		}else{
-			System.out.println("controllerPRG ELSE");
-		}
+	//	String addingReviewToDatabase = request.getParameter("result");
+	//	System.out.println("addingReviewToDatabase" + addingReviewToDatabase);
+//		if(addingReviewToDatabase.equals("added")) {
+//			System.out.println("controllerPRG" + addingReviewToDatabase);
+//		}else{
+//			System.out.println("controllerPRG ELSE");
+//		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
 		dispatcher.forward(request, response);
